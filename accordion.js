@@ -1,5 +1,4 @@
-import {faq} from "/json.js";
-
+fetch("faq.json").then(response=>response.json()).then(faq=>{
   const accordionContainer = document.querySelector(".accordion");
   let maxFaq=0;
   createFaq(faq.slice(0,5));
@@ -42,4 +41,8 @@ import {faq} from "/json.js";
        
       } 
   })
+
+})
+
+ 
   
